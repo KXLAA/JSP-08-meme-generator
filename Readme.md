@@ -10,7 +10,7 @@ The web app currently has some CORS issues when certain kinds of links are input
 
 - [LIVE PREVIEW](https://kxlaa.github.io/JSP-08-meme-generator/)
   
-## Live Demo
+<!-- ## Live Demo
 
 ### Drag & Drop
 
@@ -18,7 +18,7 @@ The web app currently has some CORS issues when certain kinds of links are input
 
 ### Link Input
 
-![]()
+![]() -->
 
 
 ## Authors
