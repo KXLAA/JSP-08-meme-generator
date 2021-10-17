@@ -10,15 +10,15 @@ The web app currently has some CORS issues when certain kinds of links are input
 
 - [LIVE PREVIEW](https://kxlaa.github.io/JSP-08-meme-generator/)
   
-<!-- ## Live Demo
+## Live Demo
 
 ### Drag & Drop
 
-![]()
+![](assets/drag-drop-input.gif)
 
 ### Link Input
 
-![]() -->
+![](assets/link-input.gif)
 
 
 ## Authors
