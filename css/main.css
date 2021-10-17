@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+/* Box sizing rules */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove default styles on links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+input {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  font-family: "Inter", sans-serif;
+  padding: 0rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #1E1D1D;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.body--dark {
+  color: #FFF;
+  background-color: #1E1D1D;
+}
+
+button, input {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.nav {
+  margin-top: 2rem;
+}
+
+.meme-generator__heading {
+  margin: 0;
+  text-align: center;
+  font-weight: 900;
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+}
+.meme-generator__form {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.meme-generator__link-input {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #1E1D1D;
+  padding: 2rem;
+  width: 70%;
+  margin-right: 2rem;
+}
+.meme-generator__link-btn {
+  width: 30%;
+  font-weight: 900;
+  background-color: #1E1D1D;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+.meme-generator__link-btn:hover {
+  transform: translateY(-10px);
+  background-color: #501EC4;
+}
+.meme-generator__link-btn:active {
+  transform: translateY(10px);
+  background-color: #501EC4;
+}
+.meme-generator__drop-zone {
+  margin: 0 auto;
+  max-width: 100%;
+  height: 10rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 0.3125rem dashed #1E1D1D;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+.meme-generator__drop-zone--file-input {
+  display: none;
+}
+.meme-generator__drop-zone--over {
+  border-style: solid;
+  border-color: #501EC4;
+}
+.meme-generator__txt-input {
+  font-size: 1.5rem;
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+}
+.meme-generator__canvas {
+  margin: 2.6rem 0rem 2rem 0rem;
+  width: 100%;
+  border: 0.2rem solid #1E1D1D;
+  border-radius: 0.3125rem;
+}
+.meme-generator__btns {
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+.meme-generator__download {
+  margin-right: 1.5rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+  border: none;
+  width: 80%;
+  padding: 2rem;
+  background-color: #1E1D1D;
+  color: white;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.meme-generator__download:hover {
+  transform: translateY(-10px);
+  background-color: #501EC4;
+}
+.meme-generator__download:active {
+  transform: translateY(10px);
+  background-color: #501EC4;
+}
+.meme-generator__reload {
+  width: 20%;
+  font-weight: 900;
+  font-size: 1.32rem;
+  border: none;
+  padding: 2rem;
+  background-color: red;
+  color: white;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.meme-generator__reload:hover {
+  transform: translateY(-10px);
+  background-color: #ff6666;
+}
+.meme-generator__reload:active {
+  transform: translateY(10px);
+  background-color: red;
+}
+
+.footer {
+  margin-bottom: 2rem;
+}
+.footer__link {
+  transition: all 0.3s ease-in-out;
+}
+.footer__link:hover {
+  color: #501EC4;
+}
+
+.toast__notification {
+  display: none;
+  position: absolute;
+  right: 3.125rem;
+  top: 10rem;
+  background-color: red;
+  border-top: 1rem solid #1E1D1D;
+  color: white;
+  width: 20rem;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.buttons-dark {
+  color: #1E1D1D;
+  background-color: #FFF;
+}
+
+.border--dark {
+  border-color: #FFF;
+}
+
+.buttons-dark:hover {
+  color: #FFF;
+}
+
+@media screen and (max-width: 666px) {
+  .meme-generator__heading {
+    font-size: 3.5rem;
+  }
+  .meme-generator__form {
+    flex-direction: column;
+  }
+  .meme-generator__link-input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .meme-generator__link-btn {
+    width: 100%;
+  }
+  .meme-generator__btns {
+    flex-direction: column;
+  }
+  .meme-generator__download {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .meme-generator__reload {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

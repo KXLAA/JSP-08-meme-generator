@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* Box sizing rules */
+*{
+  box-sizing: border-box;
+}
+
+/* Remove default styles on links */
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+input{
+  margin: 0;
+}
+
+$main-color : #1E1D1D;
+$secondary-color: #501EC4;
+$bg-color--light: #FFF;
+$bg-color--dark: #1E1D1D;
+$txt-color--light: #1E1D1D;
+$txt-color--dark: #FFF;
+
+
+/* Set core body defaults */
+body {
+    font-family: 'Inter', sans-serif;
+    padding: 0rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: $main-color;
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body--dark{
+    color: $txt-color--dark; 
+    background-color:$bg-color--dark;
+}
+
+button, input{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.nav{
+  margin-top: 2rem;
+  
+}
+
+.meme-generator{
+    &__heading{
+        margin: 0;
+        text-align: center;
+        font-weight: 900;
+        font-size: 4.5rem;
+        margin-bottom: 2rem;
+    }
+
+    &__form{
+        display: flex;
+        margin-bottom: 2rem;
+    }
+
+    &__link-input{
+        font-size: 1.5rem;
+        margin: 0;
+        color: $main-color;
+        padding: 2rem;
+        width: 70%;
+        margin-right: 2rem;
+    }
+
+    &__link-btn{
+        width: 30%;
+        font-weight: 900;
+        background-color: $main-color;
+        color: white;
+        border: none;
+        font-size: 1.5rem;
+        padding: 2rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &__link-btn:hover{
+        transform: translateY(-10px);
+        background-color: $secondary-color;
+    }
+
+    &__link-btn:active{
+        transform: translateY(10px);
+        background-color: $secondary-color;
+    }
+
+    &__drop-zone{
+        margin: 0 auto;
+        max-width: 100%;
+        height: 10rem;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border: .3125rem dashed $main-color;
+        margin-bottom: 3rem;
+        cursor: pointer;
+
+        &--file-input{
+            display: none;
+        }
+    }
+
+    &__drop-zone--over{
+        border-style: solid;
+        border-color: $secondary-color;
+    }
+
+    &__txt-input{
+        font-size: 1.5rem;
+        padding: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+    &__canvas{
+        margin: 2.6rem 0rem 2rem 0rem;
+        width: 100%;
+        border: .2rem solid $main-color;
+        border-radius: .3125rem;
+    }
+
+    &__btns{
+        display: flex;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    &__download{
+        margin-right: 1.5rem;
+        font-weight: 900;
+        font-size: 1.5rem;
+        border: none;
+        width: 80%;
+        padding: 2rem;
+        background-color: $main-color;
+        color: white;
+        border: none;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    &__download:hover{
+        transform: translateY(-10px);
+        background-color: $secondary-color;
+    }
+
+    &__download:active{
+        transform: translateY(10px);
+        background-color: $secondary-color;
+    }
+
+    &__reload{
+        width: 20%;
+        font-weight: 900;
+        font-size: 1.32rem;
+        border: none;
+        padding: 2rem;
+        background-color: red;
+        color: white;
+        border: none;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+
+    }
+
+    &__reload:hover{
+        transform: translateY(-10px);
+        background-color: lighten($color: red, $amount: 20)
+    }
+
+    &__reload:active{
+        transform: translateY(10px);
+        background-color: red;
+    }
+    
+}
+
+.footer{
+    margin-bottom: 2rem;
+
+    &__link{
+        transition: all 0.3s ease-in-out;
+    }
+
+    &__link:hover{
+        color: $secondary-color;
+    }
+}
+
+
+.hidden{
+    display: none;
+}
+
+.buttons-dark{
+    color: $main-color;
+    background-color: #FFF;
+}
+
+.border--dark{
+    border-color: #FFF;
+}
+
+.buttons-dark:hover{
+    color: #FFF;
+}
+
+//Media Queries
+@media screen and (max-width: 666px) {
+    .meme-generator{
+        &__heading{
+            font-size: 3.5rem;
+        }
+
+        &__form{
+            flex-direction: column;
+        }
+
+        &__link-input{
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+    
+        &__link-btn{
+            width: 100%;
+        }
+
+        &__btns{
+            flex-direction: column;
+        }
+
+        &__download{
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        &__reload{
+            width: 100%;
+
+        }
+    }
+  }
