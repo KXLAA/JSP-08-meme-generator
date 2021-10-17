@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- HTML Meta Tags -->
+    <title>MEME GENERATOR BY KXLAA</title>
+    <meta name="description" content="Make & Download Memes Easily with this simple Tool">
+    <link rel="shortcut icon" type="image/jpg" href="./assets/KXLA AVATAR.PNG"/>
+
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://kxlaa.github.io/JSP-09-meme-generator/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MEME GENERATOR BY KXLAA">
+    <meta property="og:description" content="Make & Download Memes Easily with this simple Tool">
+    <meta property="og:image" content="https://i.ibb.co/RDHBW2g/opengraphimg.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="kxlaa.github.io">
+    <meta property="twitter:url" content="https://kxlaa.github.io/JSP-09-meme-generator/">
+    <meta name="twitter:title" content="MEME GENERATOR BY KXLAA">
+    <meta name="twitter:description" content="Make & Download Memes Easily with this simple Tool">
+    <meta name="twitter:image" content="https://i.ibb.co/RDHBW2g/opengraphimg.png">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+    <body>
+        <nav class="nav">
+            <p class="nav__btn nav__btn--light">LIGHT MODE</p>
+            <p class="nav__btn nav__btn--dark hidden">DARK MODE</p>
+        </nav>
+
+        <main class="meme-generator__container">
+            
+            <h1 class="meme-generator__heading">
+                MEME GENERATOR
+            </h1>
+
+            <form onsubmit="getImgLink(event)" class="meme-generator__form">
+                <input type="text" name="url" id="ImageUrlInput" value="PASTE IMAGE LINK ADDRESS" class="meme-generator__link-input">
+                <input type="submit" value="GO" class="buttons meme-generator__link-btn">
+            </form>
+
+
+            <h1 class="meme-generator__heading">
+                OR
+            </h1>
+
+            <section class="borders meme-generator__drop-zone">
+                <span class="meme-generator__drop-zone--prompt">
+                    DROP FILE OR CLICK TO UPLOAD
+                </span>
+                <input type="file" name="myFile" id="imageFileInput" class="meme-generator__drop-zone--file-input">
+            </section>
+
+        
+            <input type="text" id="topTextInput" value="TOP TEXT" class="meme-generator__txt-input">
+
+            <canvas id="meme"class="borders meme-generator__canvas"></canvas>
+
+            <input type="text" id="bottomTextInput" value="BOTTOM TEXT" class="meme-generator__txt-input">
+
+            <div class="meme-generator__btns">
+                <button download="" class ="buttons meme-generator__download"id="meme-generator__download">DOWNLOAD</button>
+                
+                <button class="meme-generator__reload" onclick="reload()"> RESET 🔄</button>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__attribution"><a href="https://github.com/KXLAA" target="_blank">Coded by <span class="footer__link">KXLAA</span></a> 🤙</p>
+        </footer>
+    </body>
+</html>
