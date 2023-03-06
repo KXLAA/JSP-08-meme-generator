@@ -10,9 +10,9 @@ const bottomTextInput = document.querySelector("#bottomTextInput");
 let image; //Image Var that changes Based on input -> link or ImageFile
 
 //This Loads Image Data on submit -> When Link is submitted
-//Clear Value on Focus
+//DO NOT clear value on focus for rapid iterative editing
 imageLinkInput.addEventListener('focus', () => {
-    imageLinkInput.value = ""
+    imageLinkInput.value = imageLinkInput.value
 })
 
 imageLinkInput.addEventListener('blur', () => {
@@ -112,7 +112,7 @@ dropZoneInput.forEach(inputElement => {
 
 //Change Top Text Value
 topTextInput.addEventListener('focus', () => {
-    topTextInput.value = ""
+    topTextInput.value = topTextInput.value
 })
 
 topTextInput.addEventListener('blur', () => {
@@ -127,7 +127,7 @@ topTextInput.addEventListener('change', ()=> {
 
 //Change Bottom Text Value
 bottomTextInput.addEventListener('focus', () => {
-    bottomTextInput.value = ""
+    bottomTextInput.value = bottomTextInput.value
 })
 
 bottomTextInput.addEventListener('blur', () => {
